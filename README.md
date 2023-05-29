@@ -155,3 +155,23 @@ The best performance was found using the following parameters:
 Final Strategy Return = 1.852
 
 ---
+
+## Evaluate a New Machine Learning Classifier
+Here are the results of using the AdaBoost Classifier with the original settings.
+
+Settings:
+<pre>
+- training set:     3 months
+- SMA short window: 4
+- SMA long window:  100
+</pre>
+![ABC Training Set 3 Months S4L100](./images/abc_cumprod_plot_act_vs_strat_offset_3_months_SMAS_4_SMAL_100.png)
+<p style="text-align: center;">Training Set 3 Months, SMA Short 4, SMA Long 100</p>
+
+Final Strategy Return = 1.602
+
+*Did this new model perform better or worse than the provided baseline model?*
+While the ultimate return was the same, over most of the time it outperformed the actual returns.
+
+*Did this new model perform better or worse than your tuned trading algorithm?*
+The tuned algorithm ultimately performed better since it provided at return of 1.852 vs. 1.602 for the new AdaBoost model.
